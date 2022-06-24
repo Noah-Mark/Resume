@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <link rel="shortcut icon" href="logos\Noah (1).ico" type="image/x-icon">
+    <title>Portfolio | Home</title>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="index.html" class="logo">Portfolio</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello World, <br> I'm <span>Noah Mark S. Dela Pena</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quibusdam 
+                in fuga ratione modi unde voluptatibus itaque ex, alias eius tempora officiis 
+                praesentium aut voluptate! Iure quaerat, porro assumenda velit saepe at corrupti 
+                numquam non nesciunt dolorem magnam architecto aliquam ab rerum, eius magni ex. 
+                Ratione quibusdam nostrum beatae?</p>
+                <a href="#">Know More</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="logos\facebook.png"></a></li>
+            <li><a href="#"><img src="logos\twitter.png"></a></li>
+            <li><a href="#"><img src="logos\linkedin.png"></a></li>
+        </ul>
+    </section>
+
+    <div id="navigation">
+        <ul>
+            <li><a href="#" data-text="Home">Home</a></li>
+            <li><a href="#" data-text="About">About</a></li>
+            <li><a href="#" data-text="Services">Services</a></li>
+            <li><a href="#" data-text="Portfolio">Portfolio</a></li>
+            <li><a href="#" data-text="Contact">Contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
